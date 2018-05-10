@@ -12,12 +12,13 @@ request.onload = function() {
 
   function showHeroes(jsonObj) { 
     var myList = document.createElement('ul');
-
     for (var i = 0; i < jsonObj.length; i++) {
       
         var listItem = document.createElement('li');
         listItem.textContent = jsonObj[1].title;
         myList.appendChild(listItem);
       }
+
+    section.appendChild(myList);  
   }
   
