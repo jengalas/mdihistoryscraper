@@ -15,7 +15,7 @@ request.onload = function() {
     for (var i = 0; i < jsonObj.length; i++) {
         var listItem = document.createElement('li');
         //listItem.textContent = jsonObj[i].title;
-        listItem = '<a href="' + jsonObj[i].image + '">' + jsonObj[i].title + '</a>';
+        listItem.textContent = '<a href="' + jsonObj[i].image + '">' + jsonObj[i].title + '</a>';
         myList.appendChild(listItem);
       }
 
