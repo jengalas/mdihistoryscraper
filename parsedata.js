@@ -13,9 +13,8 @@ request.onload = function() {
   function showHeroes(jsonObj) { 
     var myList = document.createElement('ul');
     for (var i = 0; i < jsonObj.length; i++) {
-      
         var listItem = document.createElement('li');
-        listItem.textContent = jsonObj[1].title;
+        listItem.textContent = jsonObj[i].title;
         myList.appendChild(listItem);
       }
 
