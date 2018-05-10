@@ -10,14 +10,13 @@ request.onload = function() {
     showHeroes(superHeroes);
   }
 
-  function showHeroes(jsonObj) {
-    var heroes = jsonObj['members'];
+  function showHeroes(jsonObj) { 
     var myList = document.createElement('ul');
 
-    for (var i = 0; i < heroes.length; i++) {
+    for (var i = 0; i < jsonObj.length; i++) {
       
         var listItem = document.createElement('li');
-        listItem.textContent = heroes[1].title;
+        listItem.textContent = jsonObj[1].title;
         myList.appendChild(listItem);
       }
   }
